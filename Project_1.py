@@ -39,6 +39,11 @@ correlation = survey_data.corr()
 
 print(correlation)
 
+#Matthew's observation:
+#The highest correlation was between "Availability of a community room" and "City services Availibility"
+#This was only a 0.41 correlation; which is very low. This means that the features in the dataset have
+#Essentially no correlation between one another.
+
 #Duc's observation:
 #The highest correlation between the features and unhappy/happy is 
 #city services availability, community maintenance, 
