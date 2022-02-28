@@ -144,8 +144,8 @@ plt.ylabel("Error Rate")
 
 
 #Predicting with custom KNN and euclidean distance
-from duc_knn import KNN
-from duc_distance import euclidean_distance
+from custom_knn import KNN
+from distance_methods import euclidean_distance
 
 
 # In[20]:
@@ -187,7 +187,7 @@ plt.ylabel("Error Rate")
 
 
 #Predicting with custom KNN and cosine distance
-from duc_distance import cosine_distance
+from distance_methods import cosine_distance
 
 
 # In[25]:
