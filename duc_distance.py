@@ -6,7 +6,7 @@ def euclidean_distance(point1, point2):
 
 
 def cosine_distance(point1, point2):
-    sumyy = (point2 ** 2).sum(1)
-    sumxx = (point1 ** 2).sum(1, keepdims=1)
-    sumxy = point1.dot(point2.T)
-    return (sumxy / np.sqrt(sumxx)) / np.sqrt(sumyy)
+    numerator = (point1 * point2).sum()
+    denom1 = (point1 * point1).sum()
+    denom2 = (point2 * point2).sum()
+    return 1 - numerator/np.sqrt(denom1*denom2)
